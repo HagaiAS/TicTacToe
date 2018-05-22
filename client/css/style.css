@@ -1,0 +1,102 @@
+body {
+    font: normal 24px Arial;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tic-tac-toe .scoreboard {
+  margin: auto;
+}
+
+.tic-tac-toe .scoreboard .score {
+    text-align: center;
+    font-size: 30px
+}
+
+.tic-tac-toe .scoreboard .score.X {
+    color: #238EE1;
+}
+
+.tic-tac-toe .scoreboard .score.O {
+    color: #FF1010;
+}
+
+
+.tic-tac-toe .board table {
+    cell-spacing: 0px;
+    border-spacing: 0px;
+    border-collapse: separate;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin: 30px auto;
+}
+
+.tic-tac-toe .board td {
+    border: 2px solid #000;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font: 200 60px helvetica neue, arial;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.tic-tac-toe .board tr:first-child td {
+    border-top: none
+}
+
+.tic-tac-toe .board tr:last-child td {
+    border-bottom: none
+}
+
+.tic-tac-toe .board tr td:first-child {
+    border-left: none;
+}
+
+.tic-tac-toe .board tr td:last-child {
+    border-right: none;
+}
+
+.tic-tac-toe .board td.X,
+.tic-tac-toe #player_message span.X,
+.tic-tac-toe #turn_info.X {
+    color: #238EE1;
+}
+
+.tic-tac-toe .board td.O,
+.tic-tac-toe #player_message span.O,
+.tic-tac-toe #turn_info.O{
+    color: #FF1010;
+}
+
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #6ec1f5;
+    background-image: -webkit-linear-gradient(top, #6ec1f5, #499bd1);
+    background-image: -moz-linear-gradient(top, #6ec1f5, #499bd1);
+    background-image: -ms-linear-gradient(top, #6ec1f5, #499bd1);
+    background-image: -o-linear-gradient(top, #6ec1f5, #499bd1);
+    background-image: linear-gradient(to bottom, #6ec1f5, #499bd1);
+    text-decoration: none;
+}

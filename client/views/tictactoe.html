@@ -1,0 +1,16 @@
+<div class="tic-tac-toe">
+    <div id="player_message">You are: <span ng-class="userSign">{{userSign}}</span></div>
+    <div id="turn_info" ng-class="userTurn">{{turnInfo}}</div>
+    <div class="board">
+        <table>
+            <tr ng-repeat="(row_index, row) in dummyArray track by $index">
+                <td ng-repeat="(column_index, column) in dummyArray track by $index"
+                    ng-click="mark(row_index, column_index)"
+                    ng-class="data[row_index+''+column_index]">
+                    {{data[row_index+''+column_index]}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button ng-click="resetGame()" class="btn">Rematch</button>
+</div>
